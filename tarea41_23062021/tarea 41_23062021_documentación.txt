@@ -1,0 +1,19 @@
+DOCUMENTACIÓN
+- Se realiza ejercicio 
+ -Determinar los datos de los libros que no pertenecen a dos editoriales (definidas por ustedes)->('submarino','castellana')
+ -Determinar los datos nombreLibro, editorial y ejemplares de los libros cuyos ejemplares se encuentren
+  entre 100 y 330.
+ -Determinar el nombre apellidoP y cargo de los empleados que tienen un sueldo entre $550000 y $750000
+ -Determinar nombre,apellidoP,apellidoM,cargo,departamento y edad de los empleados que no pertenecen al departamento
+  (departamento definido por ustedes)->11
+
+-Realizar consultas con la claúsula order by.
+
+-Mostrar los datos de los empleados ordenados por cargo
+-Mostrar el nombre,apellidoP,cargo y departamento de los empleados ordenados por departamento.
+-Mostrar nombre,cargo y sueldo de los empleados ordenados por sueldos desde el más alto y luego  desde el más bajo.
+-Mostrar los datos de autor,nombreLibro y editorial, ordenados por editorial.
+-Mostrar los datos de los libros ordenados por cantidad de ejemplares desde el mayor al menor.
+
+
+-Realizar consultas con la función count,max, min,sum,avg.

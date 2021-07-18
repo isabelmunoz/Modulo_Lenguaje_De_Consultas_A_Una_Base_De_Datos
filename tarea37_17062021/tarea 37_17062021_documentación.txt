@@ -1,0 +1,3 @@
+DOCUMENTACIÓN
+- Se realiza ejercicio de crear dos tablas,agregar campos,cambiar un tipo de dato,
+eliminar un campo de cada tabla y agregar datos a los campos.

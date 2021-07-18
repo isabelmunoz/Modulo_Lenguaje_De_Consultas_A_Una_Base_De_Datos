@@ -1,0 +1,26 @@
+use ejercicio18062021;
+select nombre,apellidoP,cargo from empleado;
+select nombreLibro,editorial, autor from libro;
+select  nombreTienda,telefonoTienda from tienda;
+
+
+select * from empleado where apellidoP ='Munoz';
+select * from empleado where cargo ='junior';
+select * from libro where editorial ='ross';
+select * from libro where categoria ='fantasia';
+select * from tienda where nombreTienda ='franni';
+select * from tienda where direccionTienda ='la estrella 2035';
+
+
+select * from empleado where apellidoP='Munoz' and nombre= 'javiera';
+select * from libro where categoria ='fantasia' and editorial='franciscana';
+select * from tienda where nombreTienda ='florencia' and direccionTienda = 'las garzas 1234';
+
+
+select * from empleado where apellidoP='Ledezma' or nombre= 'Stephania';
+select * from libro where categoria ='drama' or editorial='castellana';
+select * from tienda where nombreTienda ='roxxo' or direccionTienda = 'las frutillas 232';
+
+select * from empleado where apellidoM in('chaparro','briones','oyarce');
+select * from libro where idLibro in (19,20,25,34);
+select * from tienda where nombreTienda in ('las vegas','pacifica','lossan');

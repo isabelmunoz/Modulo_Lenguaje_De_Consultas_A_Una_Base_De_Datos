@@ -1,0 +1,2 @@
+DOCUMENTACIÓN
+- Se realiza ejercicio de consultas con clausulas from, where, and, or e in.

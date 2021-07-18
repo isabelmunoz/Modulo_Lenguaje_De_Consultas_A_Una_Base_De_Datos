@@ -1,0 +1,45 @@
+select * from libro where editorial not in ('submarino','castellana');
+select nombreLibro,editorial,ejemplares from libro where ejemplares between 100 and 330;
+select nombre, apellidoP,cargo from empleado where sueldo between 550000 and 750000;
+select nombre,apellidoP,apellidoM,cargo,departamento,edad from empleado where departamento not in (11);
+
+
+
+
+select * from empleado order by apellidoP desc;
+select * from libro order by autor asc;
+select * from tienda order by telefonoTienda ;
+
+
+select * from empleado order by cargo;
+select nombre,apellidoP,cargo,departamento from empleado order by departamento;
+select nombre,cargo,sueldo from empleado order by sueldo desc;
+select nombre,cargo,sueldo from empleado order by sueldo;
+select autor,nombreLibro,editorial from libro order by editorial;
+select * from libro order by ejemplares desc;
+
+
+select count(autor) as total_autores from libro;
+select count(ejemplares) as total_registro_ejemplares from libro;
+select count(nombre) as Cantidad_nombres from empleado;
+select count(direccionTienda) as  cantidad_direcciones from tienda;
+
+
+
+select max(sueldo) from empleado;
+select min(sueldo) from empleado;
+select max(añoPublicacion) from libro;
+select min(añoPublicacion) from libro;
+
+
+
+select sum(sueldo) from empleado;
+select sum(añoPublicacion) from libro;
+select sum(idTienda) from tienda;
+
+
+select avg(sueldo) from empleado;
+select avg(añoPublicacion) from libro;
+select avg(idTienda) from tienda;
+select max(idTienda) from tienda;
+select min(idTienda) from tienda;

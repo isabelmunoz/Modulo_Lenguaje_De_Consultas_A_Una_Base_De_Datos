@@ -1,0 +1,4 @@
+DOCUMENTACIÓN
+- Se realiza ejercicio de crear una base de datos con tabla empleado y libro, 
+ademas de realizar una tercera tabla.
+_ Insertar 20 registros en cada tabla.

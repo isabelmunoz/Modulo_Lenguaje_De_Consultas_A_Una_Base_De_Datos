@@ -1,0 +1,102 @@
+use ejercicio18062021;
+create table empleado(
+idEmpleado int auto_increment,
+nombre varchar(25),
+apellidoP varchar(20),
+apeliidoM varchar(20),
+edad int,
+departamento int,
+cargo varchar(15),
+sueldo int,
+fechaIngreso date,
+primary key (idEmpleado)
+);
+
+create table libro(
+idLibro int auto_increment,
+nombreLibro varchar(25),
+autor varchar(25),
+editorial varchar(20),
+edicion varchar(10),
+añoPublicacion int,
+categoria varchar(15),
+ejemplares int,
+primary key (idLibro)
+);
+
+create table tienda(
+idTienda int auto_increment,
+nombreTienda varchar(20),
+direccionTienda varchar(25),
+telefonoTienda varchar(10),
+primary key (idTienda)
+);
+
+insert into empleado(idEmpleado,nombre,apellidoP,apellidoM,edad,departamento,cargo,sueldo,fechaIngreso)
+values
+(null,"Carlos","Gonzalez","Chaparro",38,17,"conductor",850000,"2021-06-01"),
+(null,"Belen","Herrera","Munoz",20,15,"asistente",500000,"2021-06-01"),
+(null,"Javiera","Munoz","Munoz",18,17,"ayudante",400000,"2021-04-07"),
+(null,"Constanza","Venegas","Munoz",24,11,"veterinaria",900000,"2020-12-15"),
+(null,"Isidora","Ledezma","Munoz",19,15,"junior",450000,"2021-02-08"),
+(null,"Francisca","Agurto","Briones",25,10,"secretaria",550000,"2019-08-12"),
+(null,"Stephania","Jimenez","Oyarce",28,15,"asistente gerencia",650000,"2017-08-01"),
+(null,"Marco","Gutierrez","Mena",30,12,"project manager",900000,"2021-04-01"),
+(null,"Isabel","Munoz","Quilapan",35,17,"desarrolladora",650000,"2021-04-03"),
+(null,"Guillermo","Sanhueza","Gutierrez",48,15,"jefe área",900000,"2017-02-08"),
+(null,"Jose","Beltran","Curapil",39,12,"asistente jefatura",650000,"2020-10-01"),
+(null,"Ignacio","Gonzalez","Munoz",19,17,"junior",500000,"2020-12-01"),
+(null,"Aneley","Briones","Troncoso",40,10,"Jefe area",900000,"2021-06-01"),
+(null,"Cristian","Becerra","Maldonado",25,11,"administrativo",650000,"2021-01-15"),
+(null,"Bastian","Corbalan","Jeria",27,11,"administrativo",650000,"2020-08-11"),
+(null,"Anastasia","Robledo","Gomez",24,11,"secretaria",600000,"2021-03-01"),
+(null,"Raul","Mendoza","Arancibia",32,15,"junior",500000,"2020-09-01"),
+(null,"Rodrigo","Gavilan","Mendez",48,13,"asistente",650000,"2021-06-01"),
+(null,"Tomas","Pacheco","Bahamondes",39,13,"junior",500000,"2021-07-01"),
+(null,"Valentina","Ledezma","Munoz",24,13,"jefe área",900000,"2018-08-01");
+
+insert into libro ('nombreLibro', 'autor', 'editorial', 'edicion', 'añoPublicacion', 'categoria', 'ejemplares') 
+values
+(null,'divina comedia', 'Dante Alighieri', 'submarino', 'cuarta', 1265, 'comedia', 120),
+(null,'Papá Goriot', 'Honoré de Blazac', 'castellana', 'sexta', 1835, 'romanticismo', 150),
+(null,'Decamerón', 'Giovanni Bocaccio', 'franciscana', 'tercera ', 1349, 'fantasia', 80),
+(null,'Don Quijote de la mancha', 'Miguel de Cevantes', 'planetaria', 'octava', 1605, 'fantasia', 135), 
+(null,'Viaje al fin de la noche', 'Luis Ferdinand Céline', 'ross', 'quinta', 1932, 'fantasia', 42),
+(null,'Relatos cortos', 'Antón Chéjov', 'maritima', 'tercera', 1886, 'fantasia', 36),
+(null,'El idiota', 'Fiódor Dostoievski', 'castellana', 'sexta', 1869, 'drama', 123),
+(null,'Los endemoniados', 'Fiódor Dostoievski', 'castellana', 'septima', 1872, 'suspenso', 83),
+(null,'Medea', 'Eurípides', 'ross', 'quinceava', 431 , 'ficción', 63),
+(null,'Nostromo', 'Joseph Conrad', 'castellana', 'tercera', 1904, 'ficción', 43),
+(null,'Crimen y  castigo', 'Fiódor Dostoievski', 'ross', 'cuarta', 1866, 'suspenso', 65),
+(null,'El hombre invisible', 'Ralph Ellison', 'submarino', 'septima', 1952, 'ficción', 124),
+(null,'Cien años de soledad', 'Gabriel García Márquez', 'franciscana', 'cuarta', 1985, 'existencial', 99),
+(null,'El tambor de hojalata', 'Gunter Grass', 'planetaria', '12°', 1959, 'fantasia', 39),
+(null,'Hambre', 'Knut Hamsun', 'ross', 'tercera', 1890, 'suspenso', 20),
+(null,'Ilíada', 'Homero', 'castellana', 'sexta', 850, 'retórica', 15),
+(null,'Odisea', 'Homero', 'castellana', '10°', 8 , 'retórica', 28),
+(null,'Ulises', 'James Joyce', 'planetaria', 'novena', 1922, 'fantasia', 35)
+(null,'El castillo', 'Franz Kafka', 'franciscana', 'quinta', 1925, 'existencial', 96),
+(null,'Diario de un loco', 'Lu Xun', 'ross', 'octava', 1918, 'comedia', 84);
+
+insert into tienda (idTienda,nombreTienda,direccionTienda,telefonoTienda)
+values
+(null,'las vegas', 'la estrella 2035', '123456789'),
+(null,'florencia', 'las garzas 1234', '653214890'),
+(null,'pacifica', 'los condores 562', '856321478'),
+(null,'roxxo', 'avenida brasil 653', '956325418'),
+(null,'frankfurt', 'los carpatos 8544', '985632147'),
+(null,'pallan', 'las frutillas 232', '984521367'),
+(null,'lossan', 'avenida matta 6532', '963258741'),
+(null,'franni', 'hualpen 562', '963258742'),
+(null,'gospel', 'lopez de bello 969', '978563214'),
+(null,'grutis', 'francisco frez 1254', '999863254'),
+(null,'mariluna', 'khali 523', '969595231'),
+(null,'planeta21', 'vivaceta 2320', '929493652'),
+(null,'frozen', 'el roble 452', '999863254'),
+(null,'refren', 'porvenir 650', '856324156'),
+(null,'cossimo', 'los perales 698', '456895723'),
+(null,'martina', 'mar del plata 852', '854627136'),
+(null,'regalia', 'troncoso prat 1245', '985632145'),
+(null,'prota', 'einstein 985', '903256895'),
+(null,'reselia', 'carpay 989', '962453658'),
+(null,'bronzo', 'sanchez rumoroso 190', '902354125');

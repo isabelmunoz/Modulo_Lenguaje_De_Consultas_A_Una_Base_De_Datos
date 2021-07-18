@@ -1,0 +1,43 @@
+use libreria;
+create table libro(
+id_tabla int auto_increment,
+titulo varchar(50),
+descripcion text,
+categoria varchar(25),
+primary key(id_tabla)
+);
+
+create table autor(
+id_tabla int auto_increment,
+nombre varchar(30),
+apellido varchar(20),
+edad int ,
+primary key(id_tabla)
+);
+
+-- agregar dos nuevos campos a las tablas--
+alter table autor add column nacionalidad varchar(20);
+alter table autor add column idioma varchar(20);
+alter table libro add column valor integer;
+alter table libro add column numero_paginas integer;
+
+
+-- cambiar un tipo de dato --
+alter table autor modify edad varchar(3);
+alter table libro modify numero_paginas int;
+
+
+-- eliminar un campo de cada tabla--
+alter table autor drop column idioma;
+alter table libro drop column numero_paginas
+
+
+-- agregar datos a los campos--
+insert into autor (nombre,apellido,edad,nacionalidad)
+values("Patrick","Suskind","42","Alemán"),
+("Antoine","de Saint-Exupéry","68","Francés");
+
+
+insert into libro (titulo,descripcion,categoria,valor)
+values("El perfume","historia de un asesino","novela",12830),
+("El principito","fantasía","novela",11890);

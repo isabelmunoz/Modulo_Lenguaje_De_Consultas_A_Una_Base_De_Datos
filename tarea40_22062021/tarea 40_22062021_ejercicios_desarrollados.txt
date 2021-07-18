@@ -1,0 +1,32 @@
+select * from libro where ejemplares > 100;
+select nombre,apellidoP,apellidoM from empleado where sueldo >500000 and departamento = 17;
+select * from libro where edicion ='primera' or edicion ='segunda' and autor='Fiódor Dostoievski'; 
+select autor from libro where edicion in('primera','segunda','tercera');
+select nombre,apellidoP, apellidoM from empleado where departamento=15;
+
+
+
+select * from empleado where apellidoM not in('chaparro','Munoz','oyarce');
+select * from libro where idLibro not in (18,21,30);
+select * from tienda where nombreTienda not in ('roxxo','gospel','pallan');
+
+
+
+select * from empleado where apellidoP <> 'Munoz';
+select * from empleado where cargo <>'junior';
+select * from libro where editorial <>'pacifica';
+select * from libro where categoria <>'fantasia';
+select * from tienda where nombreTienda <>'franni';
+select * from tienda where direccionTienda <>'la estrella 2035';
+
+
+
+select * from empleado where fechaIngreso between '2021-01-01' and '2021-04-30';
+select * from libro where añoPublicacion between '1900' and '1950';
+select * from tienda where idTienda between 5 and 15;
+
+
+select * from empleado where nombre like '%en';
+select * from libro where autor like '%o%';
+select * from tienda where nombreTienda like 'm%';
+

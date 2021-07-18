@@ -1,0 +1,2 @@
+DOCUMENTACIÓN
+- Se realiza ejercicio de primera base de datos y tres tablas adicionales.

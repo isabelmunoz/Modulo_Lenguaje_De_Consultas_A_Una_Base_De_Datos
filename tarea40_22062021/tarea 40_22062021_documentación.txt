@@ -1,0 +1,12 @@
+DOCUMENTACIÓN
+- Se realiza las siguientes consultas:
+ -Determinar los datos de los libros con más de 100 ejemplares.
+ -Determinar el nombre, apellidoP, apellidoM y cargo de los empleados que tienen un sueldo sobre los $500000 y 
+  que pertenecen al departamento (ustedes definen el departamento)->17.
+ -Determinar los datos de los libros que son de la primera o segunda edición del autor (definido por ustedes)->Fiódor Dostoievski.
+ -Determinar los autores que tienen algunas de las siguientes ediciones 1°,2° o 3°.
+ -Determinar los empleados que pertenecen al departamento (definido por ustedes)->15.
+
+
+
+-Utilizar consultas con claúsula not in, distinto,between y like.
