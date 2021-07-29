@@ -1,0 +1,24 @@
+select count(cargo) as cantidad_cargo,cargo from empleado group by sueldo;
+select count(sueldo) as cantidad,cargo,sueldo from empleado group by sueldo;
+select count(editorial) as cantidad_editorial, editorial from libro group by editorial;
+
+
+select max(sueldo) from empleado;
+select min(sueldo) from empleado;
+select count(departamento) as cantidad_empleados,departamento from empleado group by departamento;
+select sum(sueldo) from empleado;
+select count(editorial) as cantidad, editorial from libro group by editorial;
+select sum(ejemplares) from libro;
+
+
+
+-Ejercicio identificar entidades
+-Una tienda que se dedica a la venta de videojuegos, necesita llevar el control de su inventario a través de un
+sistema que utilice una base de datos.
+
+-Cliente
+-Sucursal
+-Empleado
+-Bodega
+-Producto
+-Compras

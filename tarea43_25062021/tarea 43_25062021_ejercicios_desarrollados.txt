@@ -1,0 +1,36 @@
+-Cliente
+ idCliente
+ nombreCliente
+ direcciónCliente
+ runCliente
+ tipoCliente
+
+-Sucursal
+ idSucursal
+ nombreSucursal
+ direccionSucursal 
+ productoVenta
+ 
+-Empleado
+ idEmpleado
+ nombreEmpleado
+ runEmpleado
+ antiguedadEmpleado
+ cargoEmpleado 
+
+-Bodega
+ idBodega
+ stockProducto
+ ubicacionProducto
+ 
+-Producto
+ idProducto
+ nombreProducto
+ codigoProducto
+ cantidadProducto
+
+-Ventas
+ idVenta
+ detalleVenta
+ totalVenta
+ 

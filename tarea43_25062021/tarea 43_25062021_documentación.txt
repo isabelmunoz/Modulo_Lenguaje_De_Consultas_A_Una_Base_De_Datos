@@ -1,0 +1,3 @@
+DOCUMENTACIÓN
+- Se realiza identificacion de entidades para tienda de videojuegos.
+- Se realiza diagrama de entidad-relación para tienda de videojuegos.

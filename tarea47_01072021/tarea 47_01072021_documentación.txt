@@ -1,0 +1,6 @@
+DOCUMENTACIÓN
+- Se realiza modelo de base de datos de videojuegos y de casa de estudios con script correspondiente
+ en herramienta workbench
+.
+
+

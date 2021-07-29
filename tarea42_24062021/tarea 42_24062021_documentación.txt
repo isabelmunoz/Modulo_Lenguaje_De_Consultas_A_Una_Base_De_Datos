@@ -1,2 +1,13 @@
 DOCUMENTACIÓN
-- Se realiza 
+- Se realiza consultas con la función group by.
+
+-se realiza ejercicios
+ -Determinar el mayor sueldo de cada departamento
+ -Determinar el menor sueldo de cada departamento
+ -Determinar cuantos empleados hay por departamento dentro de la empresa
+ -Determinar cuanto es el gasto total mensual en sueldos dentro de la empresa
+ -Agrupar por editorial y determinar cuantos libros pertenecen a cada una
+ -Determinar la cantidad de libros en existencia dentro de la biblioteca(ejemplares)
+
+
+-Ejercicio identificar entidades
