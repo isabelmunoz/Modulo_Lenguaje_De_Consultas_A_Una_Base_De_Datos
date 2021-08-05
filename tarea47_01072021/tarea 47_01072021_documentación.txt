@@ -1,6 +1,29 @@
 DOCUMENTACIÓN
-- Se realiza modelo de base de datos de videojuegos y de casa de estudios con script correspondiente
- en herramienta workbench
-.
+- Se realiza ingreso de datos en bbdd de videojuegos y casa de estudios 
+- Se realiza vistas  y consultas con "Join".
 
 
+
+JOIN
+
+use casa_de_estudios;
+select alumno.nombre,carrera.nombre, carrera.duracionSemestres
+from alumno
+inner join carrera
+on alumno.idAlumno=carrera.idCarrera;
+
+
+use videojuegos;
+select cliente.nombreCliente, detalleventa.formaPago,detalleventa.idProducto
+from cliente
+inner join detalleventa
+on cliente.idCliente=detalleventa.idcliente;
+
+
+VIEWS
+
+create view datosproductosventa as
+select nombreProducto,cantidadProducto from producto;
+
+create view duracioncarrera as
+select nombre,duracionSemestres from carrera;
